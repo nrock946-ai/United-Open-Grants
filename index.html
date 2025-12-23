@@ -14,21 +14,21 @@
         nav { margin-top: 20px; }
         nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1.1em; }
         nav a:hover { text-decoration: underline; }
-        section { max-width: 1000px; margin: 40px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 6px 25px rgba(0,0,0,0.1); text-align: center; }
-        .mission { font-size: 1.2em; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        section { max-width: 1000px; margin: 40px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 6px 25px rgba(0,0,0,0.1); }
+        .mission { text-align: center; font-size: 1.2em; margin-bottom: 50px; }
         .icon { width: 80px; height: auto; margin-bottom: 20px; }
+        .bio { display: flex; flex-wrap: wrap; align-items: center; gap: 40px; margin-bottom: 60px; }
+        .bio img { width: 300px; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+        .bio-text { flex: 1; min-width: 300px; }
+        .bio-text h2 { color: #007bff; }
+        .team { text-align: center; margin-bottom: 60px; }
+        .team img { width: 100%; max-width: 900px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin-top: 20px; }
         .apply-btn { 
-            display: inline-block; 
-            background: #28a745; 
-            color: white; 
-            padding: 20px 40px; 
-            font-size: 1.5em; 
-            font-weight: bold; 
-            text-decoration: none; 
-            border-radius: 12px; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2); 
+            display: block; width: fit-content; margin: 0 auto; 
+            background: #28a745; color: white; padding: 20px 50px; 
+            font-size: 1.6em; font-weight: bold; text-decoration: none; 
+            border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.2); 
             transition: background 0.3s, transform 0.2s; 
-            margin: 40px 0; 
         }
         .apply-btn:hover { background: #218838; transform: translateY(-3px); }
         footer { text-align: center; padding: 25px; background: #343a40; color: white; font-size: 0.95em; }
@@ -53,6 +53,23 @@
             <p>No fees. No endless forms. Just transparent, respectful support for those facing challenges or chasing opportunities.</p>
             <p>Backed by a small, passionate team committed to integrity and impact, we review every application carefully—protecting your privacy every step of the way.</p>
             <p>We're not just giving grants. We're sparking hope and new beginnings, one person at a time.</p>
+        </div>
+
+        <div class="bio">
+            <img src="https://webassets.oxfamamerica.org/media/images/majeda-horizo.2e16d0ba.fill-1180x738-c100.jpegquality-60.jpg" alt="Dr. Elena Ramirez, Founder & Director">
+            <div class="bio-text">
+                <h2>Dr. Elena Ramirez<br>Founder & Executive Director</h2>
+                <p>With over 25 years of experience in international development and philanthropy, Dr. Elena Ramirez established United Open Grants in 2018 to address gaps in traditional aid systems.</p>
+                <p>A former senior advisor to global NGOs and recipient of multiple humanitarian awards, Elena holds a PhD in Social Policy from Oxford University. Her career has taken her to more than 40 countries, where she has witnessed firsthand the transformative power of direct financial assistance.</p>
+                <p>"I founded United Open Grants because I believe dignity and opportunity should not be limited by bureaucracy. Our simple, open application process ensures help reaches those who need it most, when they need it most."</p>
+                <p>Elena oversees all aspects of the program, ensuring fairness, security, and meaningful outcomes for recipients.</p>
+            </div>
+        </div>
+
+        <div class="team">
+            <h2>Our Dedicated Team</h2>
+            <p>United Open Grants is supported by a small, experienced team of professionals committed to ethical philanthropy and efficient grant distribution.</p>
+            <img src="https://sff.org/wp-content/uploads/2024/07/SFF-All-Staff-Photo-2024.jpg" alt="United Open Grants Team">
         </div>
 
         <!-- Clear, prominent Apply button -->
